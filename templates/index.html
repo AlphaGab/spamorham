@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam or Not</title>
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body> 
+    <div class="flex items-center justify-center h-screen">
+        <div class="bg-white text-black p-10 lg:w-[500px] w-full text-black  bg-white  rounded-xl shadow-lg dark:bg-gray-800 dark:border-gray-700 border-2 border-indigo-300 shadow">
+              <h2 class="text-center text-lg">Spam or Ham</h2>
+             <label for="SMS">SMS:</label>
+             <textarea id="text" name="text" class="block w-full h-32 mt-2 p-2 w- text-black border rounded focus:outline-none focus:ring-1 focus:shadow-[0px_0px_5px_rgba(0,0,255,0.5)] focus:shadow-s"></textarea>
+             <button type="button" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 ">Check</button>
+            
+             <hr class="my-4 border-t-1 border-gray-300">
+        <div id="result-container"><p class="text-center"></div>
+        </div>
+    </div>
+</body>
+</html>
